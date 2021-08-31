@@ -19,14 +19,17 @@ export const Home = () => {
 };
   const [token, setToken] = useState(null);
 
-   const requestUrl = 'https://api-for-missions-and-railways.herokuapp.com/books';
 
   const onClickGet = () => {
-    axios.get(requestUrl, {
-      headers: {
-        Authorization: 
-      }
-    })
+    const token = process.env.REACT_APP_BOOK_GET_KEY;
+    const requestUrl = 'https://api-for-missions-and-railways.herokuapp.com/books';
+    const config = {
+      headers: { Authorization: `Bearer ${token}` }
+};
+
+
+
+    axios.get(requestUrl,config )
       .then(res => {
         const data = res.data;
         console.log(data);
