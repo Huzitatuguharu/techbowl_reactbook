@@ -24,7 +24,7 @@ export const Home = () => {
   const onClickGet = () => {
     axios.get(requestUrl, {
       headers: {
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzA0Nzg4NTEsImlhdCI6IjIwMjEtMDgtMzFUMDY6NDc6MzEuODQ0Nzc5MDVaIiwic3ViIjoiNTQ1NDY1NTczNTQiLCJ1c2VyX2lkIjoiMDFiMzA1NzItNzJjMi00ZjYyLTk4MTctMGZiMDE1MTI1M2VmIn0.NvSSYK-dPqYFBL7RT4Bzw56nBff2UVPT1GlKSRwh918"
+        Authorization: 
       }
     })
       .then(res => {
