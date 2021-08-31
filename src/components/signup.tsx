@@ -58,34 +58,10 @@ console.log(data);
 
   console.log(watch("name")); // you can watch individual input by pass the name of the input
   // console.log(register);
-   // ここから
-
-  const PostAPI = async () => {
-
-  //   fetch(requestUrl, {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json'
-  //   },
-  //   body: JSON.stringify({
-  //     name: 'Hubot',
-  //     login: 'hubot',
-  //   })
-  // }).then(function(response) {
-  //   // レスポンス結果
-  // }, function(error) {
-  //   // エラー内容
-  // });
-
-  }
-
-
-
-  // const result = getData?.(language); // `?`を使用することで，`getData`が存在する場合のみ関数を実行できる
 
   return (
     <>
-      <p>サインアップ</p>
+      <h1>新規会員登録</h1>
 
       {/* formタグに対して、コールバックを渡したhandleSubmitを設定 */}
       <form onSubmit={handleSubmit(onSubmit)}>

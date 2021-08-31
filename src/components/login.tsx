@@ -80,7 +80,7 @@ console.log(data);
 
   return (
     <>
-      <p>サインアップ</p>
+      <h1>ログイン画面</h1>
 
       {/* formタグに対して、コールバックを渡したhandleSubmitを設定 */}
       <form onSubmit={handleSubmit(onSubmit)}>
