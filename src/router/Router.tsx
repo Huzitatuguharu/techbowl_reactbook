@@ -8,6 +8,7 @@ import {
 import { Signup } from '../components/signup';
 import { Login } from '../components/login';
 import { Home } from '../components/Home';
+import { Page404 } from '../components/404';
 
 export const Router = () => {
 
@@ -23,6 +24,10 @@ export const Router = () => {
 
       <Route path="/pages/signup">
         <Signup />
+      </Route>
+
+       <Route path="*">
+          <Page404 />
       </Route>
 
     </Switch>

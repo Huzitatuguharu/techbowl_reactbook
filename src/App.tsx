@@ -9,6 +9,7 @@ import { Signup } from './components/signup';
 import { Login } from './components/login';
 import { Home } from './components/Home';
 import { Router } from './router/Router';
+import { Page404 } from './components/404';
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
       <Link to="/pages/login">ログイン画面</Link>
       <br />
       <Link to="/pages/signup">サインアップ</Link>
-     <Router/>
+        <Router />
+       
 
     </BrowserRouter>
 
